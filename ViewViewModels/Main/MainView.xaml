@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Main.MainView"
              Title="MainView">
-    <VerticalStackLayout>
+    <StackLayout> 
         <Label 
             Text="Welcome to .NET MAUI!"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Hi"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    </StackLayout>
 </ContentPage>
