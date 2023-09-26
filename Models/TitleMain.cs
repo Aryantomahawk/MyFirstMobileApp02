@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyFirstMobileApp.Models
 {
-   public static class TitleMain
-   {
-        public static String PageTitle { get; } = "Main Page View";
+    public static class TitleMain
+    {
+        public static String MainTitle { get; } = "Main Page View";
+
         public static String StackLayoutTitle { get; } = "Stack Layout";
     }
 }
+    
+

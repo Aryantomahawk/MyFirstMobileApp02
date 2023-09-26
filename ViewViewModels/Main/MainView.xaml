@@ -29,20 +29,20 @@
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding StackLayoutTitle}}"
-                    Command="{Binding OnLayoutsClicked} "/>
-            
+                    Text="{Binding StackLayoutTitle}"
+                    Command="{Binding OnLayoutsClicked} "
+                    Grid.ColumnSpan = "2" />        
             <Button Grid.Row="0"
                     Grid.Column="1"
-                    Text="{Binding StackLayoutTitle}}"
+                    Text="Vertical Stack"
                     Command="{Binding OnLayoutsClicked} "/>
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="{Binding StackLayoutTitle}}"
+                    Text="Horizontal Stack"
                     Command="{Binding OnLayoutsClicked} "/>
-            <Button Grid.Row="1"
-                    Grid.Column="1"
-                    Text="{Binding StackLayoutTitle}}"
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Text="Absolute Stack"
                     Command="{Binding OnLayoutsClicked} "/>
         </Grid>
     </VerticalStackLayout>

@@ -5,6 +5,6 @@ public partial class MainView : ContentPage
 	public MainView()
 	{
 		InitializeComponent();
-		BindingContext = new MainViewModel();
+		BindingContext = new MainViewModel();	
 	}
 }

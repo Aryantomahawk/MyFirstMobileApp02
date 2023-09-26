@@ -12,7 +12,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
     internal class MainViewModel : BaseViewModel
     {
 
-        public String Layouts { get; set; } = TitleMain.Layouts; 
+        //public String Layouts { get; set; } = TitleMain.Layouts; 
 
         //Button Commands
 
@@ -20,7 +20,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 
        public MainViewModel() {
 
-            Title = TitleMain.PageTitle;
+            Title = TitleMain.MainTitle;
             StackLayoutTitle = TitleMain.StackLayoutTitle;
 
             //Set Commands
@@ -31,7 +31,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 
         private async void OnLayoutsClickedAsync()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new Layout());
+            await Application.Current.MainPage.Navigation.PushAsync(new StackLayoutView());
         }
     }
 }
