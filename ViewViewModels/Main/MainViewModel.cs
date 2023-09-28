@@ -1,5 +1,6 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.StackLayoutContents;
 using System;
 using System.Collections.Generic;
 using System.Linq;

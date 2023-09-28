@@ -4,48 +4,40 @@
              x:Class="MyFirstMobileApp.ViewViewModels.Main.MainView"
              Title="{Binding Title}">
 
-    <!-- Applying a "Style" to the buttons.
-         This will provide a space between the buttons. -->
-    <ContentPage.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Margin" Value="10" />
-        </Style>
-    </ContentPage.Resources>
-
     <VerticalStackLayout>
-        <!-- Sets Margin Left, Top, Right, Bottom -->
-        <Grid Margin="25, 35, 20, 20">
+        <Grid Margin="25, 35, 20, 20"
+              RowSpacing="15"
+              ColumnSpacing="15">
+
             <Grid.RowDefinitions>
-                <!-- Set Height to 50 DIPs (device-independent pixels) -->
-                <RowDefinition Height="75" />
-                <RowDefinition Height="75" />
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <!-- Set Column to * which will proportionately space out the columns -->
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding StackLayoutTitle}"
-                    Command="{Binding OnLayoutsClicked} "
-                    Grid.ColumnSpan = "2" />        
+                    Text="{Binding StackLayoutTitle}" 
+                    Command="{Binding OnLayoutsClicked}" />
+
             <Button Grid.Row="0"
                     Grid.Column="1"
-                    Text="Vertical Stack"
-                    Command="{Binding OnLayoutsClicked} "/>
+                    Text="0,1" />
+
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="Horizontal Stack"
-                    Command="{Binding OnLayoutsClicked} "/>
-            <Button Grid.Row="2"
-                    Grid.Column="0"
-                    Text="Absolute Stack"
-                    Command="{Binding OnLayoutsClicked} "/>
+                    Text="1,0" />
+
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="1,1" />
+
         </Grid>
+
     </VerticalStackLayout>
 
 </ContentPage>
-

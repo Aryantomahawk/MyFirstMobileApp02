@@ -2,12 +2,12 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents;
 
 public partial class StackLayoutView : ContentPage
 {
-	public StackLayoutView()
-	{
+    public StackLayoutView()
+    {
         InitializeComponent();
-		BindingContext = new StackLayoutViewModel();
 
-	}
+        //creating a binding context so that my xaml file works
+        BindingContext = new StackLayoutViewModel();
 
-    
+    }
 }
